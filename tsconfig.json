@@ -32,6 +32,6 @@
   },
   "include": [
     "src/**/*",
-    "main.ts",
+    "scripts/*",
   ]
 }

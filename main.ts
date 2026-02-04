@@ -1,3 +1,4 @@
 import { hello } from "./src";
 
-hello("Bun TypeScript Project Template");
+const msg = hello("Bun TypeScript Project Template");
+console.log(msg);

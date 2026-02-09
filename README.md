@@ -17,7 +17,7 @@ A Project Template for Bun with Typescript
 
 - Run the app
   ```bash
-  bun run scripts/main.ts
+  bun run bin/main.ts
   ```
 
 - Run tests

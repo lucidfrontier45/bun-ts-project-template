@@ -14,7 +14,7 @@ All agents and contributors must follow the command structure and coding standar
 
 - **Source Code**: All library source files are located in the root directory or `src/` folder.
 - **Tests**: All test files are located in the `tests/` folder or alongside source files with `.test.ts` suffix.
-- **App Entry Point**: The main application entry point scripts are located in the `scripts/` folder.
+- **App Entry Point**: The main application entry point scripts are located in the `bin/` folder.
 
 ## 🤖 Instructions for AI Agents
 

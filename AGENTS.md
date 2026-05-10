@@ -29,3 +29,7 @@ All agents and contributors must follow the command structure and coding standar
 - Use modern ES6+ features and syntax.
 - Write modular and reusable code.
 - Follow consistent naming conventions (camelCase for variables/functions, PascalCase for classes/interfaces).
+
+## Boundary Conditions
+
+- **NEVER** directly read `.env` file.

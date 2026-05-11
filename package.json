@@ -17,5 +17,8 @@
 		"format": "biome format --write src/",
 		"typecheck": "tsgo --noEmit",
 		"build": "bun build run.ts --outdir ./dist"
+	},
+	"dependencies": {
+		"zod-opts": "^1.0.0"
 	}
 }

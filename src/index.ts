@@ -1,3 +1,24 @@
-export function hello(name: string) {
-	return `Hello, ${name}!`;
+import { z } from "zod";
+import { command, parser } from "zod-opts";
+import type { InferredOptions } from "./cli-utils";
+
+const cmdArgSchema = {
+	name: {
+		type: z.string().describe("The name to greet"),
+		alias: "n",
+	},
+};
+
+type CmdArgType = InferredOptions<typeof cmdArgSchema>;
+
+export function hello(args: CmdArgType) {
+	const msg = `Hello, ${args.name}!`;
+	console.log(msg);
 }
+
+const cmd = command("hello")
+	.description("Greets the user")
+	.options(cmdArgSchema)
+	.action(hello);
+
+parser().subcommand(cmd).parse();

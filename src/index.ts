@@ -1,5 +1,6 @@
 import { z } from "zod";
 import { command, parser } from "zod-opts";
+import pkg from "../package.json";
 import type { InferredOptions } from "./cli-utils";
 
 const cmdArgSchema = {
@@ -21,4 +22,4 @@ const cmd = command("hello")
 	.options(cmdArgSchema)
 	.action(hello);
 
-parser().subcommand(cmd).parse();
+parser().version(pkg.version).name(pkg.name).subcommand(cmd).parse();

@@ -10,6 +10,7 @@
 	"bin": {
 		"myapptest": "./bin/main.ts"
 	},
+	"version": "",
 	"scripts": {
 		"dev": "bun --watch run.ts",
 		"test": "bun test",
